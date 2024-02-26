@@ -46,7 +46,7 @@ This script demonstrates detecting Apriltag objects in a video stream from the w
 This is a single-threaded implementation of detecting orange toroid objects, calculating their distance from the camera, as well as an angular estimation of the center of the detected object from the center of the image.  Bounding boxes are drawn around the detected objects, and visual changes to teh bounding box are implemented when the bounding box is located near the x-center of the image.
 
 - ```detect_notes_mt.py```
-This is a multi-threaded implementation of ```detect_notes_st.py```.
+This is a multi-threaded implementation of ```detect_notes_st.py```.  It was implemented as a test to see if multi-threading would dramatically improve the performance of detecting the orange toroid objects.  At the end of the day, the performance was fairly similar, and the complexity of the multi-threading code wasn't really worth the effort.
 
 
 
