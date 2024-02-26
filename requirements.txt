@@ -1,2 +1,16 @@
+apriltag==0.0.16
+contourpy==1.2.0
+cycler==0.12.1
+fonttools==4.48.1
+kiwisolver==1.4.5
+matplotlib==3.8.2
 numpy==1.26.3
+opencv-contrib-python==4.9.0.80
 opencv-python==4.9.0.80
+packaging==23.2
+pillow==10.2.0
+pupil_apriltags==1.0.4.post10
+pyparsing==3.1.1
+python-dateutil==2.8.2
+pyzbar==0.1.9
+six==1.16.0
