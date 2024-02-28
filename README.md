@@ -1,6 +1,5 @@
 # Image Processing Examples
 
-
 ## Setup Instructions
 ### 1.  Create a Virtual Environment.
 Create a new directory, and within it create a Python Virtual Environment.  The .gitignore file for this project already ignores the directory name .venv.  Then source the virtual environment's ```activate``` script.
@@ -28,7 +27,9 @@ pip3 install -r requirements.txt
 
 
 # About The Examples
-These examples were built and tested using a Microsoft Lifecam HD 3000 camera.  
+These examples were built and tested using a Microsoft Lifecam HD 3000 camera.  If you are using a different type of webcam while testing this code, you will need to perform calibration of your camera to obtain values to make things like distance and pose estimation work correctly.
+
+Disclaimer:  I am by no means an OpenCV or Python expert.  These are just some scripts that I managed to hack together over a few evenings, with some generous help from Google and ChatGPT.
 
 ## Calibration Information
 The webcam used to develop these examples was calibrated using the scripts located in the ```/calibration``` directory.  Running ```/calibration/calibrate_camera.py``` uses images in the ```/calibration/calibration_images``` directory to calculate values used by OpenCV for the AprilTag example.
