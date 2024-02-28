@@ -4,7 +4,7 @@ Author: Jim Greene
 Date: 3-Feb-2023
 
 Description: Multi-threaded FRC 2024 Note detection application.  
-             Uses OpenCV to capture video frames, and detects the orange Note toroid objects 
+             Uses OpenCV to capture video frames, and detects the orange Note torus objects 
              used in the FRC 2024 game, and stores them in an array of dictionary objects 
              called detected_notes.  Each item in this array contains the width, height, area, 
              estimated distance from the camera (using camera focal length as the basis), and the
