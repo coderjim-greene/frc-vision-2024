@@ -1,3 +1,22 @@
+"""
+File: detect_notes_mt.py
+Author: Jim Greene
+Date: 3-Feb-2023
+
+Description: Multi-threaded FRC 2024 Note detection application.  
+             Uses OpenCV to capture video frames, and detects the orange Note toroid objects 
+             used in the FRC 2024 game, and stores them in an array of dictionary objects 
+             called detected_notes.  Each item in this array contains the width, height, area, 
+             estimated distance from the camera (using camera focal length as the basis), and the
+             angle the detected notes is oriented from the center of the image.
+
+             Capturing of frames, and image recognition processing occur in separate threads.  Images 
+             frames are captured in a standalone thread, and communicated back to the main thread using 
+             a queue.  This was done as an experiment to see if the image processing performance would be 
+             improved by separating obtaining images from the camera (which is a blocking call), and the actual 
+             OpenCV processing of the image frames.
+"""
+
 import cv2
 import numpy as np
 import threading
